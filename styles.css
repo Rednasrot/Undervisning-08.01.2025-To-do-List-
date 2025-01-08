@@ -11,7 +11,7 @@ body {
 
 .container,
 header {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
@@ -26,6 +26,7 @@ input {
 }
 
 button {
+  flex: d;
   padding: 10px 10px;
   background-color: aliceblue;
   border-radius: 5px;
@@ -48,10 +49,10 @@ ul {
 }
 
 li {
-  display: grid;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 
 
 
