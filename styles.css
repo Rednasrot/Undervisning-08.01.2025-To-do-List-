@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+}
+
+body {
+  background-color: bisque;
+}
+
+.container,
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 15rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: none;
+}
+
+button:hover {
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  animation: rainbow 0.5s linear infinite;
+  border: none;
+  border-radius: 5px;
+  text-shadow: white;
+}
+
+ul {
+  list-style-type: none;
+  padding;
+
+
+}
+
+/* Li goes here */
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  16% {
+    color: orange;
+  }
+  33% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  66% {
+    color: blue;
+  }
+  83% {
+    color: indigo;
+  }
+  100% {
+    color: violet;
+  }
+}
