@@ -1,20 +1,21 @@
 document.getElementById('add').addEventListener('click', function() {
   let inputValue = document.getElementById('to-do').value;
   if (inputValue) {
-    addTodo(inputvalue);
-    document.getElementById('to-do').value = "";
+    addTodo(inputValue);
+    document.getElementById('to-do').value = " ";
   }
-}
-);
+});
 
 function addTodo(task) {
  let todoList = document.getElementById ('list')
  let li = document.createElement('li');
+//  li.innerHTML = `<span>${todoList.text}</span>
+//  <button data-id"${todo.id}> Remove </button>`
  li.textContent = task;
  
  let removeButton = document.createElemement ('button')
  removeButton.textcontent = 'Remove';
- removeButton.onClick = function() {
+ removeButton.onclick = function() {
   todoList.removeChild(li);
  };
 
@@ -24,9 +25,8 @@ function addTodo(task) {
   li.classlist.toggle('completed');
   });
 
-  todolist.appendchild(li);
+  todoList.appendchild(li);
 
- }
-}
+ };
 
 

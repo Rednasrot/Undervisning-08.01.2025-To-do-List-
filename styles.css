@@ -11,7 +11,7 @@ body {
 
 .container,
 header {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -44,12 +44,19 @@ button:hover {
 
 ul {
   list-style-type: none;
-  padding;
-
+  padding: none;
 
 }
 
-/* Li goes here */
+li {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+
+
+}
 
 @keyframes rainbow {
   0% {
